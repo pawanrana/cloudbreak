@@ -44,6 +44,8 @@ public class FlowLog {
     @Column(nullable = false)
     private Boolean finalized = Boolean.FALSE;
 
+    private String cloudbreakNodeId;
+
     public FlowLog() {
 
     }
@@ -158,5 +160,13 @@ public class FlowLog {
 
     public void setFinalized(Boolean finalized) {
         this.finalized = finalized;
+    }
+
+    public String getCloudbreakNodeId() {
+        return cloudbreakNodeId;
+    }
+
+    public void setCloudbreakNodeId(String cloudbreakNodeId) {
+        this.cloudbreakNodeId = cloudbreakNodeId;
     }
 }
